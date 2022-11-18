@@ -1,0 +1,35 @@
+service -	
+├── app -	
+│   ├── sales-admin -	Package sales-admin ...
+│   │   └── commands -	Package commands contains the functionality for the set of commands currently supported by the CLI tooling.
+│   ├── sales-api -	Package sales-api ...
+│   │   ├── handlers -	Package handlers contains the full set of handler functions and routes supported by the web api.
+│   │   └── tests -	Package tests ...
+│   └── sidecar -	
+│       └── metrics -	Package metrics ...
+│           ├── collector -	Package collector ...
+│           └── publisher -	Package publisher ...
+│               ├── datadog -	Package datadog ...
+│               └── expvar -	Package expvar ...
+├── business -	
+│   ├── auth -	Package auth provides authentication and authorization support.
+│   ├── data -	
+│   │   ├── product -	Package product contains product related CRUD functionality.
+│   │   ├── schema -	Package schema contains the database schema, migrations and seeding data.
+│   │   │   └── sql -	
+│   │   └── user -	Package user contains user related CRUD functionality.
+│   ├── mid -	Package mid contains the set of middleware functions.
+│   ├── tests -	Package tests contains supporting code for running tests.
+│   └── validate -	Package validate contains the support for validating models.
+├── foundation -	
+│   ├── database -	Package database provides support for access the database.
+│   ├── keystore -	Package keystore implements the auth.KeyStore interface.
+│   └── web -	Package web contains a small web framework extension.
+└── zarf -	
+    ├── compose -	
+    ├── docker -	
+    ├── k8s -	
+    │   ├── base -	
+    │   ├── dev -	
+    │   └── stg -	
+    └── keys -	

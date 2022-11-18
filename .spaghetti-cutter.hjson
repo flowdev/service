@@ -2,12 +2,5 @@
 	tool: ["foundation/**"]
 	god: ["app/**", "business/**"]
 
-	size: 1024
-
-
-	// document and restrict usage of external packages
-	allowOnlyIn: {
-		"github.com/hjson/**": ["x/config"]
-		"golang.org/x/tools**": ["parse*", "x/pkgs*"]
-	}
+	size: 1536
 }
